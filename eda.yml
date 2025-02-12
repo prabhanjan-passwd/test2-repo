@@ -9,7 +9,7 @@
              image_url: "registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest"
              credential: "my-vault"
              organization_name: "org1"
-             controller_host: 192.168.122.101
+             controller_host: https://192.168.122.108/
              controller_username: admin
              controller_password: redhat
              state: present
