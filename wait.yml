@@ -1,6 +1,6 @@
 ---
 - name: Wait for 120 seconds
-  hosts: all
+  hosts: localhost
   gather_facts: false
 
   tasks:
@@ -8,6 +8,4 @@
       ansible.builtin.pause:
         seconds: 20
 
-    - name: hello
-      debug:
-         msg: "Hello World"
+ 
