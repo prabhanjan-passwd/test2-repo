@@ -1,0 +1,9 @@
+---
+- name: Wait for 120 seconds
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Pause for 120 seconds
+      ansible.builtin.pause:
+        seconds: 120
