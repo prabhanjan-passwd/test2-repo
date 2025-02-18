@@ -7,3 +7,7 @@
     - name: Pause for 120 seconds
       ansible.builtin.pause:
         seconds: 120
+
+    - name: hello
+      debug:
+         msg: "Hello World"
