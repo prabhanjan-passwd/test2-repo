@@ -1,0 +1,11 @@
+---
+- name: Dynamically Add a Host
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Add a new host to the inventory
+      ansible.builtin.add_host:
+        name: dynamic_host
+        ansible_host: 192.168.122.249
+        groups: dynamic_group
+        ansible_user: root
