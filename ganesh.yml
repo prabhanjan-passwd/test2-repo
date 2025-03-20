@@ -1,0 +1,15 @@
+---
+- name: demo
+  hosts: all
+  tasks:
+    - name: Check if a file exists
+      ansible.builtin.stat:
+         path: /etc/passwd
+      register: file_stat
+
+    - name: Display file existence
+      debug:
+         msg: "File exists!" 
+      when: file_stat.stat.exists
+
+  
